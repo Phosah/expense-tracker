@@ -11,6 +11,8 @@ class NewExpense extends StatefulWidget {
 }
 
 class _NewExpenseState extends State<NewExpense> {
+  // Alternative way to get an input value
+
   // var _enteredTitle = '';
   // void _saveInputValue(inputValue) {
   //   _enteredTitle = inputValue;
@@ -66,6 +68,8 @@ class _NewExpenseState extends State<NewExpense> {
       date: _selectedDate!,
       category: _selectedCategory,
     ));
+
+    Navigator.pop(context);
   }
 
   @override
